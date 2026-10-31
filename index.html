@@ -1,14 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>WDD 231 – Web Frontend Development – Casey Allen</title>
+    <meta name="author" content="Casey Allen">
+    
+    <meta name="description" content="Casey Allen – WDD 231 – Web Frontend Development Student web development frontend homepage JavaScript api intergration.">
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     
+    <header>
+        <img src="images/site-logo.svg" alt="Site Logo" >
+        <span id="course-title">Casey Allen</span>
+        <button class="hamburger" id="nav-button" aria-label="Menu Button" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+    <nav id="main-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="card">
+            <div class="heading">
+                <h2>About Me</h2>
+            </div>
+            
+            <div class="card-grid">
+                <div>
+                    <p>
+                        My name is Casey Allen. I live in Utah, I am 42 years old, I'm divorced and I have 3 children. I worked as a Full Stack web developer (HTML, CSS, JavaScript, PHP) 10 years ago. I am currently working in the construction industry after having to start over after my divorce, but now I am trying to get back into development. I really enjoyed working with JavaScript, but I know a lot has changed since then so I am excited to refresh my skill and learn new things. 
+                    </p>
+                
 
-<h1>Hello WDD 231</h1>
+                    
+                
+            </div>
+            
+        </section>
+        <section class="card">
+            <div class="heading">
+                <h2>Profile Pic</h2>
+            </div>
+
+            <div>
+                <img src="images/profile.jpg" alt="Casey Allen profile picture" class="profile-pic">
+            </div>
+        </section>
+        <section class="card">
+            <div class="heading">
+                <h2>Web Certificate Courses</h2>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-button" value="ALL">All</button>
+                <button class="filter-button" value="WDD">WDD</button>
+                <button class="filter-button" value="CSE">CSE</button>
+            </div>
+
+            <div id="courses-list">
+                
+            </div>
+            <p id="total-credits"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&lt;Casey Allen&gt; &copy;<span id="currentyear"></span> &lt;/Utah, USA&gt;</p>
+        <p id="last-modified"></p>
+        <div class="socials">
+            <nav>
+                <a href="https://www.linkedin.com/in/casey-a-784a0aab"><img src="images/linkedin-icon.png" alt="LinkedIn Profile"></a>
+                <a href="https://github.com/caseyallen386"><img src="images/git-hub.png" alt="Git Hub Profile"></a>
+                <a href="https://www.facebook.com/casey.allen.7311/"><img src="images/facebook-icon.png" alt="Facebook Profile"></a>
+            </nav>
+        </div>
+    </footer>
 
 </body>
 </html>

@@ -1,0 +1,402 @@
+
+/* CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 
+Primary / Main	#476F95	30–40% — your defining blue
+Secondary	#7593AF	20–25% — supporting elements
+Accent	#194A7A	5–10% — buttons, highlights, important elements
+Light Secondary	#A3B7CA	15–20% — cards, secondary backgrounds, borders
+Background	#D1DBE4	20–30% — large/light areas
+ */
+
+:root {
+--primary-color: #000000;
+--secondary-color: #333;
+--accent-color: #aa0000;
+/* --light-secondary: #d33131; */
+/* --alt-background-color: #282121; */
+}
+
+
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+a:link {
+    color: #333;
+}
+a:visited {
+    color: var(--accent-color);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    display: grid;
+    grid-template-columns: 64px 1fr 64px;
+    align-items: center;
+    padding: 0.5rem 5%;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+header img {
+    max-width: 100%;
+    
+}
+#course-title{
+    display: block;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 7px 5px;
+    height: 64px;
+    width: 64px;
+    background-color: var(--primary-color);
+    border: 1px solid #fff;
+    border-radius: 7px;
+}
+
+.hamburger:active {
+    border: 1px solid var(--secondary-color);
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: all 700ms ease-in-out;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: translateY(16px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-16px) rotate(-45deg);
+}
+
+nav#main-menu {
+    width: 100%;
+    background-color: var(--secondary-color);
+    height: 0;
+    overflow: hidden;
+    transition: all 700ms ease-in-out;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    font-weight: normal;
+}
+
+nav li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+}
+
+nav a:link{
+    color: #fff;
+}
+nav a:visited {
+    color: #fff;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+}
+
+main {
+    width: 90%;
+    margin: 0 auto 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    padding: 1rem;
+    
+}
+
+.card {
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.card > div {
+    padding: 0.5rem;
+}
+
+.card .heading {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: larger;
+    font-weight: normal;
+}
+
+.card .profile-pic {
+    display: block;
+    width: 100%;
+    max-width: 288px;
+    margin: 0 auto;
+}
+
+
+.card p {
+    padding: 1rem;
+}
+
+.card h3 {
+    width: 80%;
+    margin: 0 auto 10px;
+    padding: 1rem;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+
+.filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.filter-button {
+    width: 30%;
+    padding: 1rem 0;
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    color: #fff;
+}
+
+#courses-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 289px;
+}
+
+.course {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 0.5rem 0;
+    text-align: center;
+    max-height: 25px;
+}
+
+.course.completed {
+    background-color: var(--accent-color);
+}
+
+.course.completed::after {
+    content: "\2713";
+    margin-left: 5px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.socials {
+    margin-top: 2rem;
+}
+
+.socials nav {
+    margin: 0 auto;
+    max-width: 260px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials nav a {
+    padding: 0;
+}
+
+.socials img {
+    width: 64px;
+}
+
+.fine-print {
+    font-size: x-small;
+    line-height: 1;
+}
+
+/* 
+small devices (600px and up), medium devices (768px and up), large devices (992px and up), and extra large devices (1200px and up).
+*/
+
+@media screen and (min-width: 768px) {
+    h1 {
+        text-align: left;
+        grid-column: 1 / span 2 ;
+        /* color: var(--accent-color); */
+    }
+
+    main {
+        grid-template-columns: 70% 30%;
+        column-gap: 1%;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    
+    #nav-button {
+        display: none;
+    }
+
+    #course-title{
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 2rem;
+    }
+    nav#main-menu {
+        height: initial;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav li {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 1rem 1.5rem;
+        text-decoration: none;
+    }
+
+    .card .profile-pic {
+        width: 100%;
+    }
+    .card p {
+        padding: 1rem;
+    }
+
+    .card h3 {
+        width: 80%;
+        margin: 0 auto 10px;
+        padding: 1rem;
+        border-bottom: 1px solid var(--accent-color);
+    }
+
+    #courses-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        min-height: 110px;
+    }
+
+    footer {
+        position: relative;
+    }
+
+
+
+    .socials {
+        margin-top: 0;
+        position: absolute;
+        right: 5vw;
+        top: 10px;
+    }
+
+    .socials nav {
+        gap: 10px;
+    }
+
+    .socials nav a {
+        padding: 0;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .fine-print {
+        font-size: x-small;
+        line-height: 1;
+    }
+}
