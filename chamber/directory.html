@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:opsz,wght@18..144,300..900&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 – Web Frontend Development – Casey Allen Student Project Timbuktu Chamber of Commerce business directory.">
+    <meta name="author" content="Casey Allen">
+
+    <meta property="og:title" content="Business Directory | Timbuktu Chamber of Commerce | Student Project">
+    <meta property="og:description" content="description" content="WDD 231 – Web Frontend Development – Casey Allen Student Project Timbuktu Chamber of Commerce business directory.">
+    <meta property="og:image" content="https://caseyallen386.github.io/wdd231/chamber/images/site-logo.svg">
+    <meta property="og:url" content="https://caseyallen386.github.io/wdd231/chamber/">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/media-queries.css">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+
+    <title>Business Directory | Timbuktu Chamber of Commerce | Student Project</title>
+
+
+</head>
+<body>
+
+    <header>
+        <img src="" alt="" class="logo">
+
+        <div class="header-content">
+            <span id="site-title">Timbuktu Chamber of Commerce</span>
+            <nav id="main-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <button class="toggle-dark" id="toggle-dark">
+            <span></span>
+        </button>
+        <button class="hamburger" id="mobile-menu" aria-label="Menu Button" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+    
+    <main>
+        <h1>Directory</h1>
+        <div class="listing-type">
+            <button id="display-gird">Grid</button>
+            <button id="display-list">List</button>
+        </div>
+        <div id="directory"></div>   
+
+    </main>
+    
+    <footer>
+
+        <span class="address">Timbuktu Chamber of Commerce</span>
+        <span class="address">10 Rue De La Paix</span>
+        <span class="address">Timbuktu, Mali 999</span>
+        <span class="address">(223) 555-2300</span>
+
+        
+        <div class="socials">
+            <nav>
+                <a href="https://www.linkedin.com/in/casey-a-784a0aab"><img src="images/linkedin-icon.png" alt="LinkedIn Profile"></a>
+                <a href="https://github.com/caseyallen386"><img src="images/git-hub.png" alt="Git Hub Profile"></a>
+                <a href="https://www.facebook.com/casey.allen.7311/"><img src="images/facebook-icon.png" alt="Facebook Profile"></a>
+            </nav>
+        </div>
+        <P>Casey Allen WDD231 Class Project</P>
+        <p>&copy;<span id="currentyear"></span> </p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,99 @@
+/* 
+small devices (600px and up), medium devices (768px and up), large devices (992px and up), and extra large devices (1200px and up).
+*/
+
+@media screen and (min-width: 768px) {
+    h1 {
+        text-align: left;
+        grid-column: 1 / span 2 ;
+        /* color: var(--accent-color); */
+    }
+
+    main {
+        grid-template-columns: 70% 30%;
+        column-gap: 1%;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    
+    #nav-button {
+        display: none;
+    }
+
+    #course-title{
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 2rem;
+    }
+    nav#main-menu {
+        height: initial;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav li {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 1rem 1.5rem;
+        text-decoration: none;
+    }
+
+    .card .profile-pic {
+        width: 100%;
+    }
+    .card p {
+        padding: 1rem;
+    }
+
+    .card h3 {
+        width: 80%;
+        margin: 0 auto 10px;
+        padding: 1rem;
+        border-bottom: 1px solid var(--accent-color);
+    }
+
+    #courses-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        min-height: 110px;
+    }
+
+    footer {
+        position: relative;
+    }
+
+
+
+    .socials {
+        margin-top: 0;
+        position: absolute;
+        right: 5vw;
+        top: 10px;
+    }
+
+    .socials nav {
+        gap: 10px;
+    }
+
+    .socials nav a {
+        padding: 0;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .fine-print {
+        font-size: x-small;
+        line-height: 1;
+    }
+}
