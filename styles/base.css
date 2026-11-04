@@ -58,7 +58,10 @@ Background	#D1DBE4	20–30% — large/light areas
 /* --alt-background-color: #282121; */
 }
 
-
+::selection {
+    background-color: var(--accent-color);
+    color: #fff;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -67,6 +70,8 @@ body {
   font-style: normal;
   line-height: 1.5;
 }
+
+
 
 a:link {
     color: #333;
@@ -169,6 +174,10 @@ nav a:link{
 }
 nav a:visited {
     color: #fff;
+}
+
+nav a.current {
+    border: 1px solid var(--accent-color);
 }
 
 nav a:hover {
