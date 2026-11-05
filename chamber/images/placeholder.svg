@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="300"
+     height="200"
+     viewBox="0 0 300 200">
+
+  <rect width="300" height="200" fill="#e5e7eb"/>
+
+  <g fill="none" stroke="#9ca3af"
+     stroke-width="4" stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <rect x="110" y="55" width="80"
+          height="65" rx="6"/>
+
+    <circle cx="135" cy="75" r="7"/>
+
+    <path d="M115 110 L140 85 L155 100 L170 85 L185 105"/>
+  </g>
+
+  <text x="150" y="150"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="14"
+        fill="#6b7280">
+    Image Placeholder
+  </text>
+</svg>

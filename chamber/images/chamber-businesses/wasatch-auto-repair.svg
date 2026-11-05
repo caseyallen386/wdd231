@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Wasatch Auto Repair">
+  <g fill="none" stroke="#2F5D50" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 38h44l-4-13H18l-8 13Z"/><path d="M8 38v10h6m36 0h6V38"/><circle cx="19" cy="48" r="4"/><circle cx="45" cy="48" r="4"/><path d="m27 17 4-5 4 5m-4-5v13"/>
+  </g>
+</svg>

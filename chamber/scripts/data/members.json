@@ -1,0 +1,82 @@
+[
+  {
+    "companyName": "Mountain Peak Outfitters",
+    "address": "2450 North Washington Blvd, North Ogden, UT 84414",
+    "phone": "801-555-0101",
+    "website": "https://mountainpeak.example",
+    "image": "mountain-peak-outfitters.svg",
+    "membershipLevel": 3
+  },
+  {
+    "companyName": "Golden Grain Bakery",
+    "address": "1820 North 400 East, North Ogden, UT 84414",
+    "phone": "801-555-0102",
+    "website": "https://goldengrain.example",
+    "image": "golden-grain-bakery.svg",
+    "membershipLevel": 2
+  },
+  {
+    "companyName": "Wasatch Auto Repair",
+    "address": "2100 North Washington Blvd, North Ogden, UT 84414",
+    "phone": "801-555-0103",
+    "website": "https://wasatchauto.example",
+    "image": "wasatch-auto-repair.svg",
+    "membershipLevel": 1
+  },
+  {
+    "companyName": "Evergreen Landscaping",
+    "address": "1650 North 500 East, North Ogden, UT 84414",
+    "phone": "801-555-0104",
+    "website": "https://evergreenlandscaping.example",
+    "image": "evergreen-landscaping.svg",
+    "membershipLevel": 2
+  },
+  {
+    "companyName": "Summit Hot Chocolate",
+    "address": "2550 North 400 East, North Ogden, UT 84414",
+    "phone": "801-555-0105",
+    "website": "https://summitcoco.example",
+    "image": "summit-hot-chocolate.svg",
+    "membershipLevel": 3
+  },
+  {
+    "companyName": "Canyon Creek Dental",
+    "address": "1900 North Washington Blvd, North Ogden, UT 84414",
+    "phone": "801-555-0106",
+    "website": "https://canyoncreek.example",
+    "image": "canyon-creek-dental.svg",
+    "membershipLevel": 1
+  },
+  {
+    "companyName": "Blue Sky Photography",
+    "address": "2200 North 600 East, North Ogden, UT 84414",
+    "phone": "801-555-0107",
+    "website": "https://blueskyphoto.example",
+    "image": "blue-sky-photography.svg",
+    "membershipLevel": 1
+  },
+  {
+    "companyName": "Iron Horse Fitness",
+    "address": "1750 North Washington Blvd, North Ogden, UT 84414",
+    "phone": "801-555-0108",
+    "website": "https://ironhorsefitness.example",
+    "image": "iron-horse-fitness.svg",
+    "membershipLevel": 2
+  },
+  {
+    "companyName": "Silver Creek Hardware",
+    "address": "2300 North 400 East, North Ogden, UT 84414",
+    "phone": "801-555-0109",
+    "website": "https://silvercreekhardware.example",
+    "image": "silver-creek-hardware.svg",
+    "membershipLevel": 3
+  },
+  {
+    "companyName": "Fresh Start Cleaning",
+    "address": "2000 North 700 East, North Ogden, UT 84414",
+    "phone": "801-555-0110",
+    "website": "https://freshstart.example",
+    "image": "fresh-start-cleaning.svg",
+    "membershipLevel": 1
+  }
+]

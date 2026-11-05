@@ -19,8 +19,11 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/media-queries.css">
 
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/nav.js" defer></script>
+    <script src="scripts/members.js" defer></script>
 
     <title>Business Directory | Timbuktu Chamber of Commerce | Student Project</title>
 
@@ -29,14 +32,14 @@
 <body>
 
     <header>
-        <img src="" alt="" class="logo">
+        <img src="images/logo.svg" alt="Timbuktu Chamber of Commerce logo" class="logo">
 
         <div class="header-content">
             <span id="site-title">Timbuktu Chamber of Commerce</span>
             <nav id="main-menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="discover.html" aria-current="page" class="current">Discover</a></li>
                     <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
                 </ul>
@@ -57,17 +60,26 @@
             <button id="display-gird">Grid</button>
             <button id="display-list">List</button>
         </div>
-        <div id="directory"></div>   
+        <div id="directory-container">
+
+           
+
+
+            
+
+        </div>   
 
     </main>
     
     <footer>
 
-        <span class="address">Timbuktu Chamber of Commerce</span>
-        <span class="address">10 Rue De La Paix</span>
-        <span class="address">Timbuktu, Mali 999</span>
-        <span class="address">(223) 555-2300</span>
+        <div class="footer-address">
+            <span class="address">Timbuktu Chamber of Commerce</span>
+            <span class="address">10 Rue De La Paix</span>
+            <span class="address">Timbuktu, Mali 999</span>
+            <span class="address">(223) 555-2300</span>
 
+        </div>
         
         <div class="socials">
             <nav>
@@ -76,8 +88,8 @@
                 <a href="https://www.facebook.com/casey.allen.7311/"><img src="images/facebook-icon.png" alt="Facebook Profile"></a>
             </nav>
         </div>
-        <P>Casey Allen WDD231 Class Project</P>
-        <p>&copy;<span id="currentyear"></span> </p>
+        <P>Casey Allen WDD231 Class Project &copy;<span id="currentyear"></span></P>
+        
         <p id="last-modified"></p>
     </footer>
 </body>

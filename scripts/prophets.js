@@ -46,7 +46,7 @@ const getProphetData = async () => {
     const response = await fetch(url);
 
     if (!response.ok) {
-      throw new Error(`$response.status`);
+      throw new Error(`${response.status}`);
     }
 
     const data = await response.json();

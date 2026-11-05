@@ -2,6 +2,20 @@
 small devices (600px and up), medium devices (768px and up), large devices (992px and up), and extra large devices (1200px and up).
 */
 
+@media screen and (min-width: 600px) {
+
+    .card img {
+        display: initial;
+        /* margin: auto; */
+    }
+
+    .card .details {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        width: 100%;
+    }
+}
+
 @media screen and (min-width: 768px) {
     h1 {
         text-align: left;
@@ -15,10 +29,20 @@ small devices (600px and up), medium devices (768px and up), large devices (992p
     }
 }
 
+@media screen and (min-width: 836px) {
+    
+    .card .heading {
+        padding: 1rem 0;
+    }
+
+}
+
+
+
 
 @media screen and (min-width: 992px) {
     
-    #nav-button {
+    #mobile-menu {
         display: none;
     }
 
@@ -30,6 +54,7 @@ small devices (600px and up), medium devices (768px and up), large devices (992p
     }
     nav#main-menu {
         height: initial;
+        top: 61px;
     }
 
     nav ul {
@@ -47,37 +72,24 @@ small devices (600px and up), medium devices (768px and up), large devices (992p
         text-decoration: none;
     }
 
-    .card .profile-pic {
-        width: 100%;
-    }
-    .card p {
-        padding: 1rem;
-    }
-
-    .card h3 {
-        width: 80%;
-        margin: 0 auto 10px;
-        padding: 1rem;
-        border-bottom: 1px solid var(--accent-color);
-    }
-
-    #courses-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        min-height: 110px;
+    main {
+        margin-top: 80px;
     }
 
     footer {
         position: relative;
+        text-align: left;
     }
 
-
+    footer .footer-address {
+        max-width: 35vw;
+    }
 
     .socials {
         margin-top: 0;
         position: absolute;
         right: 5vw;
-        top: 10px;
+        bottom: 10px;
     }
 
     .socials nav {

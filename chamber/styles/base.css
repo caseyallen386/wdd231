@@ -112,6 +112,7 @@ Small text	13–14px */
 
 
 body {
+    background-color: var(--background);
     font-family: var(--font-body);
     font-optical-sizing: auto;
     font-weight: 300;
@@ -130,6 +131,15 @@ a:link {
 }
 a:visited {
     color: var(--accent-color);
+}
+
+a.button {
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    text-align: center;
 }
 
 button {
@@ -224,6 +234,7 @@ header img {
 nav#main-menu {
     position: absolute;
     left: 0;
+    top: 81px;
     width: 100%;
     background-color: var(--secondary-color);
     height: 0;
@@ -257,6 +268,13 @@ nav a:visited {
     color: #fff;
 }
 
+nav a.current {
+    padding: 0;
+    border-style: solid;
+    border-color: var(--accent-color);
+    border-width: 1rem 1.5rem;
+}
+
 nav a:hover {
     background-color: var(--accent-color);
 }
@@ -264,8 +282,7 @@ nav a:hover {
 main {
     width: 90%;
     margin: 0 auto 1rem;
-    display: grid;
-    grid-template-columns: 1fr;
+    max-width: 985px;
 }
 
 h1 {
@@ -276,11 +293,27 @@ h1 {
     
 }
 
+.listing-type {
+    margin: 0 auto 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+}
+
+#directory-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 10px;
+}
+
 .card {
     border: 1px solid var(--accent-color);
-    border-radius: 25px;
+    background-color: var(--alt-backgroound);
+    border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 10px;
+    margin: 0 auto 10px;
+    width: 100%;
+    
 }
 
 .card > div {
@@ -296,24 +329,21 @@ h1 {
     font-weight: normal;
 }
 
-.card .profile-pic {
+.card img {
     display: block;
-    width: 100%;
-    max-width: 288px;
     margin: 0 auto;
 }
 
-
-.card p {
-    padding: 1rem;
+.heading h2 {
+    color: var(--alt-backgroound);
 }
 
-.card h3 {
-    width: 80%;
-    margin: 0 auto 10px;
-    padding: 1rem;
-    border-bottom: 1px solid var(--accent-color);
+
+.card ul li {
+    margin-bottom: 1rem;
 }
+
+
 
 
 .filter-buttons {
@@ -332,12 +362,37 @@ h1 {
     color: #fff;
 }
 
-#courses-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    min-height: 289px;
+
+#directory-container.list {
+    display: block;
 }
+
+
+.list .card {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.list .card .details {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+}
+
+.card .heading {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: larger;
+    font-weight: normal;
+}
+
+.heading h2 {
+    color: var(--alt-backgroound);
+}
+
+
 
 .course {
     background-color: var(--secondary-color);
