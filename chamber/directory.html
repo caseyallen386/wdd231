@@ -13,7 +13,7 @@
 
     <meta property="og:title" content="Business Directory | Timbuktu Chamber of Commerce | Student Project">
     <meta property="og:description" content="WDD 231 – Web Frontend Development – Casey Allen Student Project Timbuktu Chamber of Commerce business directory.">
-    <meta property="og:image" content="https://caseyallen386.github.io/wdd231/chamber/images/site-logo.svg">
+    <meta property="og:image" content="https://caseyallen386.github.io/wdd231/chamber/images/logo.svg">
     <meta property="og:url" content="https://caseyallen386.github.io/wdd231/chamber/">
 
     <link rel="stylesheet" href="styles/base.css">
@@ -27,17 +27,17 @@
 
     <script src="scripts/getdates.js" defer></script>
 
-    <title>Business Directory | Timbuktu Chamber of Commerce | Student Project</title>
+    <title>Business Directory | North Ogden Chamber of Commerce | Student Project</title>
 
 
 </head>
 <body>
 
     <header>
-        <img src="images/logo.svg" alt="Timbuktu Chamber of Commerce logo" class="logo">
+        <img src="images/logo.svg" alt="Timbuktu Chamber of Commerce logo" class="logo" width="64" height="64">
 
         <div class="header-content">
-            <span id="site-title">Timbuktu Chamber of Commerce</span>
+            <span id="site-title">North Ogden Chamber of Commerce</span>
             <nav id="main-menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -59,8 +59,8 @@
     <main>
         <h1>Directory</h1>
         <div class="listing-type">
-            <button id="display-gird">Grid</button>
-            <button id="display-list">List</button>
+            <button id="display-grid" class="change-list">Grid</button>
+            <button id="display-list" class="change-list">List</button>
         </div>
         <div id="directory-container">
 
@@ -75,24 +75,28 @@
     
     <footer>
 
-        <div class="footer-address">
-            N. Ogden Chamber of Commerce 2480 N 200 E, Ogden, UT 84414
-            <!-- The address is actually the address of the aquatics center in north -->
+        <div class="chamber-address">
+            <span>N. Ogden Chamber of Commerce</span> 
+            <span>2480 N 200 E</span> 
+            <span>Ogden, UT 84414</span>
 
         </div>
         
-        <div class="socials">
-            <nav>
-                <a href="https://www.linkedin.com/in/casey-a-784a0aab"><img src="images/linkedin-icon.png" alt="LinkedIn Profile" width="64" height="64"></a>
-                <a href="https://github.com/caseyallen386"><img src="images/insta-icon.png" alt="Git Hub Profile" width="64" height="64"></a>
-                <a href="https://www.facebook.com/casey.allen.7311/"><img src="images/facebook-icon.png" alt="Facebook Profile" width="64" height="64"></a>
-            </nav>
-        </div>
+        <nav class="socials">
+            <a href="https://www.linkedin.com/in/casey-a-784a0aab"><img src="images/linkedin-icon.png" alt="LinkedIn Profile" width="64" height="64"></a>
+            <a href="https://github.com/caseyallen386"><img src="images/insta-icon.png" alt="Git Hub Profile" width="64" height="64"></a>
+            <a href="https://www.facebook.com/casey.allen.7311/"><img src="images/facebook-icon.png" alt="Facebook Profile" width="64" height="64"></a>
+        </nav>
+            
+        
         <div class="copyright">
             <p>Casey Allen WDD231 Class Project &copy;<span id="currentyear"></span></p>
         
             <p id="last-modified"></p>
         </div>
+
+
+        
     </footer>
 </body>
 </html>

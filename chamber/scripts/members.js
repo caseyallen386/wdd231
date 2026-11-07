@@ -1,7 +1,11 @@
 const url = 'scripts/data/members.json';
 const directoryContainer = document.getElementById('directory-container');
+const displayChangeButtons = document.getElementsByClassName('change-list');
 
 const membersImageDirectory = "images/chamber-businesses/"
+
+
+console.log(displayChangeButtons);
 
 
 function displayMembers(members) {
@@ -59,6 +63,32 @@ async function getMemberData() {
     } catch (error) {
         console.error(`The ${error} prevented member data from being retrieved`);
     }
+}
+
+function changeDisplayType(eventBtn) {
+
+    switch(eventBtn.getAttribute('id')){
+        case 'display-list' :
+
+            directoryContainer.classList.add('list');
+
+            break;
+
+        case 'display-grid' :
+
+            directoryContainer.classList.remove('list');
+            break;
+        
+ 
+    }
+}
+
+for (let i = 0; i < displayChangeButtons.length; i++) {
+
+    displayChangeButtons[i].addEventListener( 'click', (event) => {
+        changeDisplayType(displayChangeButtons[i]);
+    });
+
 }
 
 getMemberData();

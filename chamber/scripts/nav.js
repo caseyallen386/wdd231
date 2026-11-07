@@ -21,7 +21,6 @@ function debounce(callback, timeout=100) {
     };
 }
 
-
  
 
 navButton.addEventListener('click', () => {
@@ -53,7 +52,7 @@ window.addEventListener('resize', () => {
             navButton.classList.remove('open');
         }
 
-    },100 );
+    }, 25 );
 
     
 });

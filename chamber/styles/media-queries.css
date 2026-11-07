@@ -4,6 +4,10 @@ small devices (600px and up), medium devices (768px and up), large devices (992p
 
 @media screen and (min-width: 600px) {
 
+    header {
+        font-size: large;
+    }
+
     .card img {
         display: initial;
         /* margin: auto; */
@@ -14,9 +18,38 @@ small devices (600px and up), medium devices (768px and up), large devices (992p
         grid-template-columns: 30% 70%;
         width: 100%;
     }
+
+
+    .list .card {
+        flex-direction: row;
+    }
+
+    .list .card .details {
+        width: 345px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .chamber-address {
+        align-items: flex-start;
+        max-width: 240px;
+    }
+
+    .copyright {
+        text-align: right;
+        max-width: 240px;
+    }
 }
 
 @media screen and (min-width: 768px) {
+    
+    header {
+        gap: 25px
+    }
+    
     h1 {
         text-align: left;
         grid-column: 1 / span 2 ;
@@ -54,7 +87,7 @@ small devices (600px and up), medium devices (768px and up), large devices (992p
     }
     nav#main-menu {
         height: initial;
-        top: 61px;
+        top: 81px;
     }
 
     nav ul {
@@ -76,29 +109,7 @@ small devices (600px and up), medium devices (768px and up), large devices (992p
         margin-top: 80px;
     }
 
-    footer {
-        position: relative;
-        text-align: left;
-    }
 
-    footer .footer-address {
-        max-width: 35vw;
-    }
-
-    .socials {
-        margin-top: 0;
-        position: absolute;
-        right: 5vw;
-        bottom: 10px;
-    }
-
-    .socials nav {
-        gap: 10px;
-    }
-
-    .socials nav a {
-        padding: 0;
-    }
 
     .clear {
         clear: both;
