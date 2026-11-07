@@ -26,7 +26,7 @@ function displayMembers(members) {
                 <span>${memberLvl[member.membershipLevel - 1]} Membership</span>
             </div>
             <div class="details">
-                <img src="${membersImageDirectory}${member.image}" alt="${member.companyName} Logo" loading="lazy" height="75px" width="75px">
+                <img src="${membersImageDirectory}${member.image}" alt="${member.companyName} Logo" loading="lazy" height="75" width="75">
                 <ul>
                     
                     <li><a href="tel:${member.phone}" class="button">${member.phone}</a></li>
