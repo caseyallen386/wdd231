@@ -1,4 +1,4 @@
-const url = 'scripts/data/members.json';
+const url = 'data/members.json';
 const directoryContainer = document.getElementById('directory-container');
 const displayChangeButtons = document.getElementsByClassName('change-list');
 

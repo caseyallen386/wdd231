@@ -392,7 +392,6 @@ h1 {
 
 .list .card .heading {
     background-color: var(--secondary-color);
-    color: #fff;
     text-align: center;
     padding: 1rem;
     font-size: larger;
