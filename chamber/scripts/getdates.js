@@ -1,6 +1,14 @@
 (function() {
-    const TODAY = new Date();
+    const TODAY = new Date();   
 
-    document.getElementById('last-modified').innerHTML = "Last Modified: " + document.lastModified;
-    document.getElementById('currentyear').innerHTML = TODAY.getFullYear();
+    window.addEventListener('load', () => {
+        
+        
+        document.getElementById('currentyear').innerHTML = TODAY.getFullYear();
+        document.getElementById('last-modified').innerHTML = "Last Modified: " + document.lastModified;
+        
+        
+    });
+    
+    
 })()

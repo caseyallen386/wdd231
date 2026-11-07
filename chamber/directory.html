@@ -12,7 +12,7 @@
     <meta name="author" content="Casey Allen">
 
     <meta property="og:title" content="Business Directory | Timbuktu Chamber of Commerce | Student Project">
-    <meta property="og:description" content="description" content="WDD 231 – Web Frontend Development – Casey Allen Student Project Timbuktu Chamber of Commerce business directory.">
+    <meta property="og:description" content="WDD 231 – Web Frontend Development – Casey Allen Student Project Timbuktu Chamber of Commerce business directory.">
     <meta property="og:image" content="https://caseyallen386.github.io/wdd231/chamber/images/site-logo.svg">
     <meta property="og:url" content="https://caseyallen386.github.io/wdd231/chamber/">
 
@@ -21,9 +21,11 @@
 
     <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
 
-    <script src="scripts/getdates.js" defer></script>
+    
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/members.js" defer></script>
+
+    <script src="scripts/getdates.js" defer></script>
 
     <title>Business Directory | Timbuktu Chamber of Commerce | Student Project</title>
 
@@ -46,7 +48,7 @@
             </nav>
         </div>
         
-        <button class="toggle-dark" id="toggle-dark">
+        <button class="toggle-dark" id="toggle-dark" aria-label="light or dark mode">
             <span></span>
         </button>
         <button class="hamburger" id="mobile-menu" aria-label="Menu Button" aria-expanded="false">
@@ -74,23 +76,23 @@
     <footer>
 
         <div class="footer-address">
-            <span class="address">Timbuktu Chamber of Commerce</span>
-            <span class="address">10 Rue De La Paix</span>
-            <span class="address">Timbuktu, Mali 999</span>
-            <span class="address">(223) 555-2300</span>
+            N. Ogden Chamber of Commerce 2480 N 200 E, Ogden, UT 84414
+            <!-- The address is actually the address of the aquatics center in north -->
 
         </div>
         
         <div class="socials">
             <nav>
-                <a href="https://www.linkedin.com/in/casey-a-784a0aab"><img src="images/linkedin-icon.png" alt="LinkedIn Profile"></a>
-                <a href="https://github.com/caseyallen386"><img src="images/git-hub.png" alt="Git Hub Profile"></a>
-                <a href="https://www.facebook.com/casey.allen.7311/"><img src="images/facebook-icon.png" alt="Facebook Profile"></a>
+                <a href="https://www.linkedin.com/in/casey-a-784a0aab"><img src="images/linkedin-icon.png" alt="LinkedIn Profile" width="64px" height="64px"></a>
+                <a href="https://github.com/caseyallen386"><img src="images/insta-icon.png" alt="Git Hub Profile" width="64px" height="64px"></a>
+                <a href="https://www.facebook.com/casey.allen.7311/"><img src="images/facebook-icon.png" alt="Facebook Profile" width="64px" height="64px"></a>
             </nav>
         </div>
-        <P>Casey Allen WDD231 Class Project &copy;<span id="currentyear"></span></P>
+        <div class="copyright">
+            <p>Casey Allen WDD231 Class Project &copy;<span id="currentyear"></span></p>
         
-        <p id="last-modified"></p>
+            <p id="last-modified"></p>
+        </div>
     </footer>
 </body>
 </html>

@@ -91,13 +91,15 @@ Section headings (H2)	28–32px
 Card headings (H3)	20–24px
 Body text	16–18px
 Navigation	15–16px
-Small text	13–14px */
+Small text	13–14px
+6c5422
+*/
 
 
 :root {
     --primary-color: #17324D;
     --secondary-color: #34495E;
-    --accent-color: #C69B45;
+    --accent-color: #896a2c;
 
     --background: #F4F2ED;
     --alt-backgroound: #ffffff;
@@ -138,7 +140,7 @@ a.button {
     display: block;
     padding: 0.5rem 1rem;
     background-color: var(--accent-color);
-    color: var(--primary-color);
+    color: var(--alt-backgroound);
     text-align: center;
 }
 
@@ -148,6 +150,8 @@ button {
     padding: 0.5rem 1.5rem;
     border: 1px solid var(--accent-color);
     border-radius: 5px;
+    color: var(--alt-backgroound);
+    font-weight: bold;
 }
 
 button:hover {
@@ -300,6 +304,11 @@ h1 {
     gap: 64px;
 }
 
+.listing-type button {
+    font-size: 18pt;
+    
+}
+
 #directory-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -386,44 +395,23 @@ h1 {
     padding: 1rem;
     font-size: larger;
     font-weight: normal;
-}
-
-.heading h2 {
     color: var(--alt-backgroound);
 }
 
-
-
-.course {
-    background-color: var(--secondary-color);
-    color: #fff;
-    padding: 0.5rem 0;
-    text-align: center;
-    max-height: 25px;
-}
-
-.course.completed {
-    background-color: var(--accent-color);
-}
-
-.course.completed::after {
-    content: "\2713";
-    margin-left: 5px;
-}
 
 footer {
     background-color: var(--primary-color);
     color: #fff;
     padding: 1rem;
-    text-align: center;
+    /* text-align: center; */
 }
 
-.socials {
+/* .socials {
     margin-top: 2rem;
-}
+} */
 
 .socials nav {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     max-width: 260px;
     display: flex;
     justify-content: space-between;
@@ -437,8 +425,7 @@ footer {
     width: 64px;
 }
 
-.fine-print {
-    font-size: x-small;
-    line-height: 1;
+.copyright {
+    width: 100%;
 }
 
