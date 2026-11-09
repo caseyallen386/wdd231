@@ -5,8 +5,6 @@ const displayChangeButtons = document.getElementsByClassName('change-list');
 const membersImageDirectory = "images/chamber-businesses/"
 
 
-console.log(displayChangeButtons);
-
 
 function displayMembers(members) {
 

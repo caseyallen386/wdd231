@@ -245,6 +245,7 @@ nav#main-menu {
     height: 0;
     overflow: hidden;
     transition: all 700ms ease-in-out;
+    z-index: 1000;
 }
 
 nav ul {
@@ -290,11 +291,47 @@ main {
     max-width: 985px;
 }
 
+main.homepage {
+    width: 100%;
+}
+
+.homepage h2 {
+    text-align: center;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+   
+    width: 100%;
+
+}
+
 h1 {
     text-align: center;
     font-size: 3rem;
     font-weight: 400;
     padding: 1rem;
+    
+}
+
+.hero h1 {
+    position: absolute;
+    font-size: 1.75rem;
+    text-align: left;
+    left: 10%;
+    top: 5%;
+    padding: 0;
+}
+
+.hero .tag-line{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    font-weight: 500;
+    color: var(--primary-color);
     
 }
 
