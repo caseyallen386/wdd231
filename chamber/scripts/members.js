@@ -1,3 +1,6 @@
+import { getData } from "./getdata.js";
+
+
 const url = 'data/members.json';
 const directoryContainer = document.getElementById('directory-container');
 const displayChangeButtons = document.getElementsByClassName('change-list');
@@ -45,23 +48,7 @@ function displayMembers(members) {
     });
 }
 
-async function getMemberData() {
-    try {
-        
-        const response = await fetch(url);
 
-        if (!response.ok) {
-            throw new Error(`${response.status}`);
-        }
-
-        const data = await response.json();
-
-        displayMembers(data);
-
-    } catch (error) {
-        console.error(`The ${error} prevented member data from being retrieved`);
-    }
-}
 
 function changeDisplayType(eventBtn) {
 
@@ -89,4 +76,4 @@ for (let i = 0; i < displayChangeButtons.length; i++) {
 
 }
 
-getMemberData();
+getData(url, displayMembers);

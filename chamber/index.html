@@ -22,10 +22,15 @@
     <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
 
     
+    <script type="module" src="scripts/getdata.js"></script>
+    <script type="module" src="scripts/weather.js"></script>
+
     <script src="scripts/nav.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    
 
     <script src="scripts/getdates.js" defer></script>
+
+
 
     <title>Home | North Ogden Chamber of Commerce | Student Project</title>
 
@@ -74,11 +79,50 @@
         <!-- current event(s) section -->
          <sections class="current-events">
             <h2>Current Events</h2>
+
+            <ul>
+                <li>
+                    <h3>Summer Socials</h3>
+                    <ul>
+                        <li>Summer Kick Off: Sat May 3rd</li>
+                        <li>Midsummer Nights BBQ Wed: July 14th</li>
+                        <li>Bring On The Pumpkin Spice: Sept 5th</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>New Business Seminar!</h3>
+                    <P>Join us June 7th! Get Tips and Advice from <u>Seasoned Business</u> owners to help you start your business.</P>
+                    <p>Special Quest Speaker!</p>
+                </li>
+                
+            </ul>
          </sections>
 
         <!-- weather section -->
-         <section id="weather-section" class="weather">
+         <section class="weather">
             <h2>Todays Weather</h2>
+            <div class="todays-weather" id="todays-weather">
+                <h3>
+                    <span class="placeholder"></span>
+                </h3>
+                <div>
+                    
+                    <span class="weather-icon">
+                        <span class="placeholder"></span>
+                    </span>
+                </div>
+                <div>
+                    <span class="current-temp">40&deg;</span>
+                    <span class="feels-like">Feels Like 38&deg;</span>
+                    <span class="temp-hi-lo">&#8593;58&deg; / &#8595;38&deg;</span>
+                </div>
+                
+                
+                
+            </div>
+            <div class="weather-forcast" id="weather-forcast">
+                <h3>Next 3 Days</h3>
+            </div>
          </section>
 
         <!-- section containing two or three company 'spotlights' -->
