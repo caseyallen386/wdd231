@@ -24,6 +24,7 @@
     
     <script type="module" src="scripts/getdata.js"></script>
     <script type="module" src="scripts/weather.js"></script>
+    <script type="module" src="scripts/home.js"></script>
 
     <script src="scripts/nav.js" defer></script>
     
@@ -65,13 +66,15 @@
         
         <!-- scalable hero image (using an img tag NOT a CSS background image)  -->
         <div class="hero">
-            <h1>N. Ogden Chamber of Commerce</h1>
-            <span class="tag-line">Together We Do Business</span>
-            <picture>
-                <source media="(min-width:600px)" srcset="images/handshake-922.webp">
-                
+            <div class="hero-content">
+                <h1>N. Ogden Chamber of Commerce</h1>
+                <span class="tag-line">Together We Do Business</span>
+
+                <a href="#" class="button">Join Us!</a>
+            </div>
+            <div class="hero-image">
                 <img src="images/handshake-600.webp" alt="People Shaking Hands" width="600">
-            </picture>
+            </div>
         </div>
 
         <!-- call to action link to join the chamber of commerce (this join page is a future page to be built)  -->
@@ -81,7 +84,7 @@
             <h2>Current Events</h2>
 
             <ul>
-                <li>
+                <li class="event">
                     <h3>Summer Socials</h3>
                     <ul>
                         <li>Summer Kick Off: Sat May 3rd</li>
@@ -89,7 +92,7 @@
                         <li>Bring On The Pumpkin Spice: Sept 5th</li>
                     </ul>
                 </li>
-                <li>
+                <li class="event">
                     <h3>New Business Seminar!</h3>
                     <P>Join us June 7th! Get Tips and Advice from <u>Seasoned Business</u> owners to help you start your business.</P>
                     <p>Special Quest Speaker!</p>
@@ -100,14 +103,14 @@
 
         <!-- weather section -->
          <section class="weather">
-            <h2>Todays Weather</h2>
+            <h2>Current Weather</h2>
             <div class="todays-weather" id="todays-weather">
                 <h3>
                     <span class="placeholder"></span>
                 </h3>
                 <div>
                     
-                    <span class="weather-icon">
+                    <span class="current-weather-icon">
                         <span class="placeholder"></span>
                     </span>
                 </div>
@@ -120,14 +123,25 @@
                 
                 
             </div>
-            <div class="weather-forcast" id="weather-forcast">
+            <div class="weather-forecast" id="weather-forcast">
                 <h3>Next 3 Days</h3>
+                <div class="forecast">
+                    <!-- <span class="placeholder"></span> -->
+                     <h4>WeekDay</h4>
+                     <span ></span>
+                     <span class="temp-hi-lo">&#8593;58&deg; / &#8595;38&deg;</span>
+                </div>
+                <div class="forecast"><span class="placeholder"></span></div>
+                <div class="forecast"><span class="placeholder"></span></div>
             </div>
          </section>
 
         <!-- section containing two or three company 'spotlights' -->
          <section id="spotlight" class="spotlight">
             <h2>Member Spotlight</h2>
+            <div id="directory-container">
+
+            </div> 
          </section>
 
     </main>

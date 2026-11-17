@@ -308,10 +308,12 @@ main {
 
 main.homepage {
     width: 100%;
+    
 }
 
 .homepage h2 {
     text-align: center;
+    margin: 1.5rem 0;
 }
 
 .hero {
@@ -367,6 +369,10 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 10px;
     min-height: 800px;
+}
+
+.homepage #directory-container {
+    min-height: 100px;
 }
 
 .card {
@@ -455,11 +461,27 @@ h1 {
     display: none;
 }
 
+.current-events {
+    padding: 0 0.5rem 1rem ;
+}
+
+.current-events ul {
+    padding: 0.75rem;
+}
+
+.current-events .event {
+    margin: 1rem 0;
+}
+
 .weather {
     
     background-color: var(--secondary-color);
     color: var(--alt-backgroound);
     padding: 1rem;
+}
+
+.weather span {
+    display: block;
 }
 
 .weather h2, .weather h3 {
@@ -474,6 +496,8 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--accent-color) ;
 }
 
 
@@ -481,7 +505,7 @@ h1 {
     grid-column: 1 /3;
 }
 
-.todays-weather .weather-icon {
+.todays-weather .current-weather-icon {
     width: 100%;
     text-align: center;
     font-size: 1.1rem;
@@ -502,6 +526,34 @@ h1 {
 .todays-weather .temp-hi-lo {
     grid-column: 2/3;
     text-align: center;
+}
+
+.weather-forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.weather-forecast h3{
+    grid-column: 1/4;
+    
+}
+
+.weather-forecast .forecast {
+    padding: 10px;
+}
+
+.weather-forecast .forecast:nth-of-type(2){
+    border-left: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+}
+
+
+.forecast h4 {
+    color: var(--alt-backgroound);
+}
+
+.forecast .placeholder {
+    height: 100%;
 }
 
 footer {

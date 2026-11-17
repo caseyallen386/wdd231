@@ -1,11 +1,5 @@
-import { getData } from "./getdata.js";
-
-
-const url = 'data/members.json';
+const membersImageDirectory = "images/chamber-businesses/";
 const directoryContainer = document.getElementById('directory-container');
-const displayChangeButtons = document.getElementsByClassName('change-list');
-
-const membersImageDirectory = "images/chamber-businesses/"
 
 
 
@@ -68,12 +62,6 @@ function changeDisplayType(eventBtn) {
     }
 }
 
-for (let i = 0; i < displayChangeButtons.length; i++) {
 
-    displayChangeButtons[i].addEventListener( 'click', (event) => {
-        changeDisplayType(displayChangeButtons[i]);
-    });
 
-}
-
-getData(url, displayMembers);
+export {displayMembers, changeDisplayType}
