@@ -81,7 +81,7 @@ const courses = [
 const coursesContainer = document.getElementById('courses-list');
 const filterButtons = document.querySelectorAll('.filter-button');
 
-
+const courseDetails = document.querySelector('#course-details');
 
 function filterSubject(course, subject) {
     
@@ -94,6 +94,26 @@ function filterSubject(course, subject) {
     return course.subject == subject;
 }
 
+
+function displayCourseDetail(course){
+    courseDetails.innerHTML = `
+        <div class="heading">
+            <button id="close-modal" aria-label="Close"><span></span><span></span></button>
+            <h2>${course.subject} ${course.number}</h2><span>-</span>
+            <h3>${course.title}</h3>
+        </div>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+
+    courseDetails.querySelector('#close-modal').addEventListener('click', () => {
+        courseDetails.close();
+        courseDetails.innerHTML = '';
+    });
+}
 
 /**
  * 
@@ -108,15 +128,19 @@ function displayCourses(courses) {
 
         
          
-        const span = document.createElement('span');
+        const courseItem = document.createElement('button');
 
-        span.classList.add('course');
+        courseItem.classList.add('course');
         if (course.completed) {
-            span.classList.add('completed');
+            courseItem.classList.add('completed');
         }
-        span.innerHTML = `${course.subject} ${course.number}`
+        courseItem.innerHTML = `${course.subject} ${course.number}`
 
-        coursesContainer.appendChild(span);
+        courseItem.addEventListener( 'click', (event)=>{
+            displayCourseDetail(course);
+        } );
+
+        coursesContainer.appendChild(courseItem);
     })
 
     
@@ -128,6 +152,8 @@ function displayCourses(courses) {
 }
 
 
+
+
 filterButtons.forEach((button) => {
     button.addEventListener( 'click', ()=>{
         displayCourses(
@@ -135,6 +161,7 @@ filterButtons.forEach((button) => {
         );
     })
 });
+
 
 
 displayCourses(courses);

@@ -593,6 +593,11 @@ nav.socials {
     text-align: center;
 }
 
+
+/* 
+    both background declaration are intentional. the solid color background is a fallback 
+    for browsers that don't support linear-gradient 
+*/
 .placeholder {
     display: block;
     animation-duration: 1s;

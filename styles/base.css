@@ -54,6 +54,8 @@ Background	#D1DBE4	20–30% — large/light areas
 --primary-color: #000000;
 --secondary-color: #333;
 --accent-color: #aa0000;
+
+--border-radius: 5px;
 /* --light-secondary: #d33131; */
 /* --alt-background-color: #282121; */
 }
@@ -71,7 +73,9 @@ body {
   line-height: 1.5;
 }
 
-
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+}
 
 a:link {
     color: #333;
@@ -113,7 +117,7 @@ header img {
     width: 64px;
     background-color: var(--primary-color);
     border: 1px solid #fff;
-    border-radius: 7px;
+    border-radius: var(--border-radius);
 }
 
 .hamburger:active {
@@ -125,7 +129,7 @@ header img {
     width: 100%;
     height: 4px;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     transition: all 700ms ease-in-out;
 }
 
@@ -201,7 +205,7 @@ h1 {
 
 .card {
     border: 1px solid var(--accent-color);
-    border-radius: 25px;
+    border-radius: var(--border-radius);
     overflow: hidden;
     margin-bottom: 10px;
 }
@@ -231,12 +235,12 @@ h1 {
     padding: 1rem;
 }
 
-.card h3 {
+/* .card h3 {
     width: 80%;
     margin: 0 auto 10px;
     padding: 1rem;
     border-bottom: 1px solid var(--accent-color);
-}
+} */
 
 
 .filter-buttons {
@@ -251,7 +255,7 @@ h1 {
     padding: 1rem 0;
     background-color: var(--accent-color);
     border: 1px solid var(--accent-color);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     color: #fff;
 }
 
@@ -267,12 +271,55 @@ h1 {
     color: #fff;
     padding: 0.5rem 0;
     text-align: center;
-    max-height: 25px;
+    border: 1px solid var(--secondary-color);
 }
 
 .course.completed {
     background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
+
+#course-details {
+    padding: 0;
+    margin-top: 25vh;
+}
+
+#course-details h2, #course-details h3 {
+    display: inline-block;
+    width: auto;
+}
+
+
+
+#close-modal {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--accent-color);
+    height: 40px;
+    width: 40px;
+    border-radius: var(--border-radius);
+}
+
+#close-modal span{
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: var(--border-radius);
+    
+}
+
+#close-modal span:nth-child(1) {
+    transform: translateY(1px) rotate(45deg);
+}
+
+#close-modal span:nth-child(2) {
+    transform: translateY(-3px) rotate(-45deg);
+}
+
+
 
 .course.completed::after {
     content: "\2713";
