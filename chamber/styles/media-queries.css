@@ -154,12 +154,8 @@ small devices (600px and up), medium devices (768px and up), large devices (992p
         align-items: center;
     }
     
-    .clear {
-        clear: both;
-    }
-
-    .fine-print {
-        font-size: x-small;
-        line-height: 1;
+    .events-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }

@@ -465,12 +465,38 @@ h1 {
     padding: 0 0.5rem 1rem ;
 }
 
-.current-events ul {
-    padding: 0.75rem;
+.events-container {
+    max-width: 922px;
+    margin: 0 auto;
 }
 
+
+
 .current-events .event {
-    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    border-bottom: 1px solid var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.event .details {
+    padding: 1rem;
+}
+
+.date {
+    background-color: var(--secondary-color);
+    color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--accent-color);
+    
+}
+
+.date .day{
+    font-size: 2rem;
 }
 
 .weather {
@@ -506,6 +532,9 @@ h1 {
 }
 
 .todays-weather .current-weather-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     text-align: center;
     font-size: 1.1rem;
@@ -540,6 +569,9 @@ h1 {
 
 .weather-forecast .forecast {
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .weather-forecast .forecast:nth-of-type(2){
