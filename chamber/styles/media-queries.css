@@ -116,6 +116,11 @@ small devices (600px and up), medium devices (768px and up), large devices (992p
         max-width: 100%;
     }
 
+    .homepage #directory-container {
+        max-width: 985px;
+        margin: 0 auto;
+    }
+
     #mobile-menu {
         display: none;
     }
