@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:opsz,wght@18..144,300..900&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 – Web Frontend Development – Casey Allen Student Project Chamber of Commerce business directory.">
+    <meta name="author" content="Casey Allen">
+
+
+    <meta property="og:title" content="Business Directory | Chamber of Commerce | Student Project">
+    <meta property="og:description" content="WDD 231 – Web Frontend Development – Casey Allen Student Project | Chamber of Commerce business directory.">
+    <meta property="og:image" content="https://caseyallen386.github.io/wdd231/chamber/images/handshake-600.webp">
+    <meta property="og:url" content="https://caseyallen386.github.io/wdd231/chamber/">
+
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/media-queries.css">
+
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+
+    
+    <script type="module" src="scripts/getdata.js"></script>
+    <script type="module" src="scripts/form.js"></script>
+    
+
+    <script src="scripts/nav.js" defer></script>
+    
+
+    <script src="scripts/getdates.js" defer></script>
+
+
+
+    <title>Join Us! | North Ogden Chamber of Commerce | Student Project</title>
+
+
+</head>
+<body>
+
+    <header>
+        <img src="images/logo.svg" alt="Timbuktu Chamber of Commerce logo" class="logo" width="64" height="64">
+
+        <div class="header-content">
+            <span id="site-title">North Ogden Chamber of Commerce</span>
+            <nav id="main-menu">
+                <ul>
+                    <li><a href="index.html" aria-current="page" class="current">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <button class="toggle-dark" id="toggle-dark" aria-label="light or dark mode">
+            <span></span>
+        </button>
+        <button class="hamburger" id="mobile-menu" aria-label="Menu Button" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+    
+    <main>
+        <h1>Membership Application</h1>
+        <p>Tell us about yourself and your business!</p>
+
+        <div class="form-container">
+            <form action="thankyou.html" method="get">
+
+                <ol>
+                    <li class="card">
+                        <fieldset>
+                            <div class="heading">
+                                <legend>Applicant Information</legend>
+                            </div>
+                            
+                            <div>
+                                <label for="first-name"><span class="required">*</span>First Name</label>
+                                <input 
+                                    type="text" 
+                                    id="first-name" 
+                                    name="first-name" 
+                                    title="Firsts Name" 
+                                    autocomplete="given-name" 
+                                    required>
+                            </div>
+                            <div>
+                                <label for="last-name"><span class="required">*</span>Last Name</label>
+                                <input 
+                                    type="text" 
+                                    id="last-name" 
+                                    name="last-name" 
+                                    title="Last Name" 
+                                    autocomplete="family-name" 
+                                    required>
+                            </div>
+
+                            <div>
+                                <label for="organization-title">
+                                    <span class="required">*</span>
+                                    Organization Title
+                                </label>
+                                <input 
+                                    id="organization-title"
+                                    type="text" 
+                                    name="organization-title" 
+                                    title="Organization Title"
+                                    autocomplete="organization-title"
+                                    pattern="[a-zA-Z '-].{7,}" 
+                                    required>
+                            </div>
+                            <div>
+                                <label for="email"><span class="required">*</span>Email</label>
+                                <input 
+                                    type="email" 
+                                    name="email" 
+                                    id="email"
+                                    title="Email Address"
+                                    autocomplete="email"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="phone"><span class="required">*</span>Phone</label>
+                                <input 
+                                    type="tel" 
+                                    name="phone" 
+                                    id="phone"
+                                    title="Phone number where we can contact you."
+                                    autocomplete="tel"
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                    required>
+                            </div>
+                        </fieldset>
+                    </li>
+                    <li class="card">
+
+                        <fieldset>
+                            <div class="heading">
+                                <legend>Business Information</legend>
+                            </div>
+
+                            <div>
+                                <label for="business-name">
+                                    <span class="required">*</span>
+                                    Business Name
+                                </label>
+                                <input 
+                                    type="text"
+                                    id="business-name"
+                                    name="business-name"
+                                    title="Your Business Name"
+                                    autocomplete="organization"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="business-address">
+                                    <span class="required">*</span>
+                                    Business Address
+                                </label>
+                                <input 
+                                    type="text"
+                                    id="business-address"
+                                    name="business-address"
+                                    title="Your business street address include room or suite numbers"
+                                    autocomplete="street-address"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="business-city">
+                                    <span class="required">*</span>
+                                    City
+                                </label>
+                                <input 
+                                    type="text"
+                                    id="business-city"
+                                    name="business-city"
+                                    title="City"
+                                    autocomplete="address-level2"
+                                    required>
+
+                            </div>
+                            <div>
+                                <label for="business-state">
+                                    <span class="required">*</span>
+                                    State
+                                </label>
+                                <input 
+                                    type="text"
+                                    id="business-state"
+                                    name="business-state"
+                                    autocomplete="address-level1"
+                                    title="Your State"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="business-zip">
+                                    <span class="required">*</span>
+                                    Zip Code
+                                </label>
+                                <input 
+                                    type="text"
+                                    id="business-zip"
+                                    name="business-zip"
+                                    title="Zip or Postal Code"
+                                    autocomplete="postal-code"
+                                    >
+                            </div>
+                            <div>
+                                <label for="business-url">
+                                    <span class="required">*</span>
+                                    Webite Website
+                                </label>
+                                <input 
+                                    type="url"
+                                    id="business-url"
+                                    name="business-url"
+                                    title="Your business website address"
+                                    autocomplete="url"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="business-description">
+                                    <span class="required">*</span>
+                                    Business Description
+                                </label>
+                                <textarea 
+                                    name="business-description" 
+                                    id="business-description"
+                                    autocomplete="off"
+                                    title="A description of your business"
+                                    required></textarea>
+                            </div>
+                        </fieldset>
+                    </li>
+                    <li class="card">
+                        <fieldset>
+                            <div class="heading">
+                                <legend>Membership Level</legend>
+                            </div>
+
+                            <div>
+                                <label for="membership-level">Select a Membership Level</label>
+                                <Select 
+                                    name="membership-level" 
+                                    id="membership-level"
+                                    autocomplete="off"
+                                    title="Select your membership level"
+                                    required>
+                                    <option value="" selected disabled>...</option>
+                                    <option value="non-profit">Non Profit</option>
+                                    <option value="bronze">Bonze Membership</option>
+                                    <option value="silver">Silver Membership</option>
+                                    <option value="gold">Gold Membership</option>
+                                </Select>
+                            </div>
+
+                        </fieldset>
+                    </li>
+                    <li>
+                        <fieldset>
+                            <legend>
+                                Additional Information
+                            </legend>
+                            <input type="hidden" name="application-date" value="" id="application-date">
+                            <div class="agreements-container">
+                                <div>
+                                    <input type="checkbox" name="terms-agreement" id="terms-agreement" value="agreed" required>
+                                    <label for="terms-agreement">
+                                        By checking this box you are stating that you have read and have agreed to the terms of our <a href="#">Membership Agreement</a>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="communication-agreement" id="communication-agreement" value="agreed" required>
+                                    <label for="communication-agreement">By checking this box you are agreeing to receive communications from us by phone or email.</label>
+                                </div>
+                                
+
+
+
+                            </div>
+                            
+                        </fieldset>
+                        <input type="submit" value="Apply">
+                    </li>
+                </ol>
+            </form>
+
+            <div class="member-level-cards">
+                <h2>Membership Levels</h2>
+                <ul>
+                    <li class="card">
+                        <div class="heading">
+                            
+                            <h3>Non Profit</h3>
+                            
+                        </div>
+
+                        <a href="#" class="button">Learn More</a>
+                    </li>
+                    <li class="card">
+                        <div class="heading">
+                            <h3>Bronze Membership</h3>
+                            
+                        </div>
+
+                        <!-- $100 / year — Business directory listing and networking opportunities. -->
+                        <a href="#" class="button">Learn More</a>
+                    </li>
+                    <li class="card">
+                        <div class="heading">
+                            <h3>Silver Membership</h3>
+                            
+                        </div>
+
+                        <!-- $250 / year — Basic benefits plus promotional opportunities and event discounts. -->
+                        <a href="#" class="button">Learn More</a>
+                    </li>
+                    <li class="card">
+                        <div class="heading">
+                            <h3>Gold Membership</h3>
+                            
+                        </div>
+                        <!-- $500 / year — Silver benefits plus premium advertising and sponsorship opportunities. -->
+                        <a href="#" class="button">Learn More</a>
+                    </li>
+                </ul>
+
+                <dialog id="membership-details" class="card">
+                    <div class="heading">
+                        <button id="close-modal" aria-label="Close"><span></span><span></span></button>
+                        <h3>Gold Membership</h3>
+                        <span class="recommended-for">Established Business</span>
+                    </div>
+
+                    <div class="details">
+                        <h4>$500 /Year</h4>
+                        
+                        <p>For businesses wanting greater exposure, leadership opportunities, and a stronger role in the local business community.</p>
+
+                        <div class="benefits">
+                            <h4>Gold Member Benefits</h4>
+                            <ul>
+                                <li>Premium placement in the online business directory.</li>
+                                <li>Quarterly social media business spotlights</li>
+                                <li>Complimentary admission to select chamber events</li>
+                                <li>Priority access to sponsorship opportunities</li>
+                                <li>Business recognition on the chamber homepage</li>
+                                <li>Opportunity to participate in chamber committees</li>
+                                <li>Two promotional features in the chamber newsletter annually</li>
+                            </ul>
+                        </div>
+                    </div>
+                </dialog>
+            </div>
+
+        </div>
+        
+        
+    
+
+    </main>
+    
+    <footer>
+
+        <div class="chamber-address">
+            <span>N. Ogden Chamber of Commerce</span> 
+            <span>2480 N 200 E</span> 
+            <span>Ogden, UT 84414</span>
+
+        </div>
+        
+        <nav class="socials">
+            <a href="https://www.linkedin.com/in/casey-a-784a0aab"><img src="images/linkedin-icon.png" alt="LinkedIn Profile" width="64" height="64"></a>
+            <a href="https://github.com/caseyallen386"><img src="images/insta-icon.png" alt="Git Hub Profile" width="64" height="64"></a>
+            <a href="https://www.facebook.com/casey.allen.7311/"><img src="images/facebook-icon.png" alt="Facebook Profile" width="64" height="64"></a>
+        </nav>
+            
+        
+        <div class="copyright">
+            <p>Casey Allen WDD231 Class Project &copy;<span id="currentyear"></span></p>
+        
+            <p id="last-modified"></p>
+        </div>
+
+
+        
+    </footer>
+</body>
+</html>

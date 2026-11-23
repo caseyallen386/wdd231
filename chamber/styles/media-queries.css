@@ -7,7 +7,7 @@ small devices (600px and up), medium devices (768px and up), large devices (992p
     header {
         font-size: large;
     }
-.hero {
+    .hero {
         display: grid;
         grid-template-columns: 1fr 1fr;
         max-height: calc(100vh - 180px);
@@ -54,6 +54,12 @@ small devices (600px and up), medium devices (768px and up), large devices (992p
         width: 345px;
     }
 
+
+    #membership-details .benefits {
+        grid-column: 2/3;
+        margin-top: 1rem;
+    }
+
     footer {
         flex-direction: row;
         justify-content: space-between;
@@ -77,6 +83,7 @@ small devices (600px and up), medium devices (768px and up), large devices (992p
     }
     
     h1 {
+        font-size: 3rem;
         text-align: left;
         grid-column: 1 / span 2 ;
         /* color: var(--accent-color); */
@@ -88,7 +95,14 @@ small devices (600px and up), medium devices (768px and up), large devices (992p
     }
 
 
-    
+    .form-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .member-level-cards {
+        margin: 0 10px;
+    }
 
 }
 
@@ -96,6 +110,10 @@ small devices (600px and up), medium devices (768px and up), large devices (992p
     
     .card .heading {
         padding: 1rem 0;
+    }
+
+    li.card .heading{
+        padding: 0.75rem;
     }
 
    .hero img {

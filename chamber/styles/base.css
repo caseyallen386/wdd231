@@ -6,6 +6,9 @@
    License: none (public domain)
 */
 
+* {
+    box-sizing: border-box;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -124,6 +127,8 @@ Placeholder animation from https://cloudcannon.com/blog/how-the-facebook-content
     --font-heading: 'Merriweather', serif;
     --font-body: 'Open Sans', sans-serif;
 
+    --border-radius: 7px;
+
 }
 
 
@@ -164,7 +169,7 @@ button {
     columns: var(--primary-color);
     padding: 0.5rem 1.5rem;
     border: 1px solid var(--accent-color);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     color: var(--alt-backgroound);
     font-weight: bold;
 }
@@ -223,7 +228,7 @@ header img {
     width: 64px;
     background-color: var(--primary-color);
     border: 1px solid #fff;
-    border-radius: 7px;
+    border-radius: var(--border-radius);
 }
 
 .hamburger:active {
@@ -328,7 +333,7 @@ main.homepage {
 
 h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 400;
     padding: 1rem;
     
@@ -378,7 +383,7 @@ h1 {
 .card {
     border: 1px solid var(--accent-color);
     background-color: var(--alt-backgroound);
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     overflow: hidden;
     margin: 0 auto;
     width: 100%;
@@ -392,7 +397,7 @@ h1 {
 .card .heading {
     background-color: var(--secondary-color);
     color: #fff;
-    min-height: 100px;
+    /* min-height: 100px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -642,4 +647,130 @@ nav.socials {
     background-size: 800px 104px;
     height: 1rem;
     position: relative;
+}
+
+.member-level-cards {
+    margin-top: 20px;
+}
+
+form div{
+    padding: 0.5rem;
+}
+
+li.card {
+    margin: 0 auto 10px;
+}
+
+li.card h3 {
+    color: var(--alt-backgroound);
+}
+
+li.card .heading {
+    align-items: start;
+}
+
+legend {
+    padding: 1rem 0;
+}
+
+.required {
+    color: #ff0000;
+}
+
+input, label {
+    display: block;
+}
+
+input:focus {
+    border-color: var(--accent-color);
+}
+
+input, select {
+    
+    width: 100%;
+    padding: 0.65rem;
+    border-radius: 99999px;
+    border: 1px solid var(--primary-text);
+}
+
+select#membership-level option {
+    padding: 0.75rem 0.25rem;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+textarea{
+    width: 100%;
+    min-height: 75px;
+    padding: 0.65rem;
+    border-radius: 15px;
+}
+
+.agreements-container div {
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    align-items: start;
+}
+
+.agreements-container label{
+    padding: 0 10px 10px 10px;
+}
+
+input[type=checkbox] {
+    display: inline-block;
+}
+
+#membership-details {
+    padding: 0;
+}
+
+#membership-details h3 {
+    color: var(--alt-backgroound);
+    pad: 1rem 0;
+}
+
+#membership-details .details {
+    overflow-y: scroll;
+    height: 500px;
+}
+
+.details h4, .details p, .details .benefits {
+    padding: 1rem;
+}
+
+.recommended-for {
+    background-color: var(--accent-color);
+    color: var(--alt-backgroound);
+    padding: 5px 15px;
+    border-radius: 9999px;
+    font-size: smaller;
+}
+
+#close-modal {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--accent-color);
+    height: 40px;
+    width: 40px;
+    border-radius: var(--border-radius);
+    padding: 4px;
+}
+
+#close-modal span{
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: var(--border-radius);
+    
+}
+
+#close-modal span:nth-child(1) {
+    transform: translateY(1px) rotate(45deg);
+}
+
+#close-modal span:nth-child(2) {
+    transform: translateY(-3px) rotate(-45deg);
 }
