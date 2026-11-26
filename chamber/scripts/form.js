@@ -1,4 +1,4 @@
-import { getData } from "./getData.js";
+import { getData } from "./getdata.js";
 
 const membershipDetailsUrl = "data/memberships.json";
 const membershipDetails = document.querySelector("#membership-details");

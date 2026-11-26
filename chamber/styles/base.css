@@ -726,7 +726,7 @@ input[type=checkbox] {
 
 #membership-details h3 {
     color: var(--alt-backgroound);
-    pad: 1rem 0;
+    padding: 1rem 0;
 }
 
 #membership-details .details {
