@@ -1,7 +1,25 @@
 [
     {
-        "level": "Bronze Membership",
-        "price": 100.00,
+        "level": "Non Profit",
+        "price": 74.99,
+        "subscription": false, 
+        "recommendedFor" : "Nonprofit organizations only",
+        "description": "Created to support charitable organizations, community programs, and other nonprofit organizations making a difference in the local community.",
+        "benefits" : [
+            "Business and organization listing in the online chamber directory.",
+            "Access to monthly networking events.",
+            "Chamber newsletter subscription.",
+            "Opportunities to connect with local businesses and community leaders.",
+            "Access to community partnership opportunities.",
+            "Opportunity to promote fundraising events and community initiatives.",
+            "Discounted admission to select chamber events."
+        ]
+            
+        
+    },
+    {
+        "level": "Bronze",
+        "price": 99.95,
         "subscription": true,
         "recommendedFor" : "Small businesses & startups",
         "description": "An affordable way for small businesses and entrepreneurs to connect with the local business community.",
@@ -16,8 +34,8 @@
         
     },
     {
-        "level": "Silver Membership",
-        "price": 250.00,
+        "level": "Silver",
+        "price": 249.95,
         "subscription": true,
         "recommendedFor" : "Growing businesses",
         "description": "Designed for established businesses looking to increase their visibility and build stronger community connections.",
@@ -32,8 +50,8 @@
         
     },
     {
-        "level": "Gold Membership",
-        "price": 500.00,
+        "level": "Gold",
+        "price": 499.95,
         "subscription": true,
         "recommendedFor" : "Established businesses",
         "description": "For businesses wanting greater exposure, leadership opportunities, and a stronger role in the local business community.",
@@ -45,24 +63,6 @@
             "Business recognition on the chamber homepage.",
             "Opportunity to participate in chamber committees.",
             "Two promotional features in the chamber newsletter annually."
-        ]
-            
-        
-    },
-    {
-        "level": "Non Profits Membership",
-        "price": 75,
-        "subscription": false, 
-        "recommendedFor" : "Nonprofit organizations only",
-        "description": "Created to support charitable organizations, community programs, and other nonprofit organizations making a difference in the local community.",
-        "benefits" : [
-            "Business and organization listing in the online chamber directory.",
-            "Access to monthly networking events.",
-            "Chamber newsletter subscription.",
-            "Opportunities to connect with local businesses and community leaders.",
-            "Access to community partnership opportunities.",
-            "Opportunity to promote fundraising events and community initiatives.",
-            "Discounted admission to select chamber events."
         ]
             
         
