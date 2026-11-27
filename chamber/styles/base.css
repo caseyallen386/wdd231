@@ -409,7 +409,7 @@ h1 {
     margin: 0 auto;
 }
 
-.heading h2 {
+.heading h2, .heading h3 {
     color: var(--alt-backgroound);
 }
 
@@ -773,4 +773,20 @@ input[type=checkbox] {
 
 #close-modal span:nth-child(2) {
     transform: translateY(-3px) rotate(-45deg);
+}
+
+
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.details-grid span {
+    padding: 10px ;
+    
+}
+
+.details-grid span:nth-last-of-type(odd) {
+    text-align: right;
 }

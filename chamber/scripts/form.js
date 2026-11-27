@@ -2,6 +2,7 @@ import { getData } from "./getdata.js";
 
 const membershipDetailsUrl = "data/memberships.json";
 const membershipDetails = document.querySelector("#membership-details");
+const form = document.querySelector('form');
 
 function displayMembershipDetails(details) {
 
@@ -85,3 +86,8 @@ document.querySelectorAll("li.card a").forEach((learnMore) => {
 
 
 loadMembershipDetails();
+
+form.addEventListener( 'submit', () => {
+    document.querySelector('#application-date').value = new Date().toLocaleString();
+});
+
