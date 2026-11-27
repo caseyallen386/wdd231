@@ -19,17 +19,17 @@ function displayMembershipDetails(details) {
     `
         <div class="heading">
             <button id="close-modal" aria-label="Close"><span></span><span></span></button>
-            <h3>${details.level} Membership</h3>
+            <h2>${details.level} Membership</h2>
             <span class="recommended-for">${details.recommendedFor}</span>
         </div>
 
         <div class="details">
-            <h4>$${details.price} /${details.subscription ? 'year': 'Enrollment Fee'}</h4>
+            <h3>$${details.price} /${details.subscription ? 'year': 'Enrollment Fee'}</h3>
             
             <p>${details.description}</p>
 
             <div class="benefits">
-                <h4>${details.level} Member Benefits</h4>
+                <h3>${details.level} Member Benefits</h3>
                 <ul>
                     ${benefits.join('')}
                 </ul>
